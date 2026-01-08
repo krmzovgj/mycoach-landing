@@ -58,7 +58,7 @@ export const Home = () => {
                             type: "spring",
                             delay: 0.1,
                         }}
-                        className="mt-8 text-muted-foreground text-md md:w-1/2 w-full"
+                        className="mt-8 text-muted-foreground text-md md:w-1/2 w-[90%]"
                     >
                         The all-in-one platform for personal trainers to create
                         workouts, plan diets, and track clients without
@@ -82,18 +82,21 @@ export const Home = () => {
             </div>
 
             <div className="flex mt-20 items-center md:w-2/3 place-self-center flex-col justify-center">
-                <h1 className="text-center  text-foreground md:text-5xl text-3xl">
-                    Everything you need
+                <h1 className="text-center leading-9 md:leading-none  text-foreground md:text-5xl text-4xl">
+                    What it actually <br className="flex md:hidden" /> looks like
                 </h1>
 
                 <h3 className="text-muted-foreground text-md text-center mt-5 md:w-1/3 w-full">Tired of clients asking ‘what’s next?’ every day? mycoach does all the work so you don’t have to repeat yourself.</h3>
 
-                <div className="flex flex-col  md:grid mt-10 grid-cols-2 grid-rows-2 gap-6">
+                <div className="flex flex-col  md:grid mt-10 grid-cols-2 grid-rows-2 gap-4 md:gap-6">
                     {productShowcase.map((item: ProductShowcase) => (
                         <div key={item.imgUrl} className="flex flex-col">
                             <h3 className="mb-2 ml-1 text-lg flex items-center gap-x-1.5"><span className="text-muted-foreground">{item.order}</span> <RecordCircle variant="Bold" size={15} color="#000" /> {item?.label}</h3>
 
-                            <img src={item.imgUrl} className="shadow-sm rounded-xl" alt="" />
+                            <div className="p-2 bg-foreground/10 rounded-xl md:rounded-2xl">
+                            <img src={item.imgUrl} className="shadow-sm rounded-md md:rounded-xl" alt="" />
+                            </div>
+                                
                         </div>
                     ))}
                 </div>

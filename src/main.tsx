@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
                     "mask-[radial-gradient(1000px_circle_at_center,white,transparent)]"
                 )}
             />
-            <div className="relative  md:p-8 p-6">
+            <div className="relative  md:p-8 p-4">
                 <App />
             </div>
         </BrowserRouter>
