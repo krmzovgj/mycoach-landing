@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GridPattern } from "@/components/ui/grid-pattern";
@@ -75,12 +76,12 @@ export const Home = () => {
             icon: ArchiveBox,
         },
         {
-            order: "04",
+            order: "05",
             content: "Work with many clients at once",
             icon: People,
         },
         {
-            order: "05",
+            order: "06",
             content: "Want a clear view of details for each client",
             icon: Element2,
         },
@@ -317,6 +318,7 @@ export const Home = () => {
                 <div className="flex flex-col md:w-1/3 w-full mt-10 gap-y-5">
                     {thisIsForTrainersWho.map((item) => (
                         <motion.div
+                        key={item.order}
                             initial={{
                                 opacity: 0,
                                 y: 60,
@@ -368,7 +370,7 @@ export const Home = () => {
                     strokeDasharray="2 6"
                     className={cn(
                         "inset-0 z-0 pointer-events-none",
-                        "mask-[radial-gradient(1000px_circle_at_center,white,transparent)]"
+                        "mask-[radial-gradient(600px_circle_at_center,white,transparent)]"
                     )}
                 />
                 <Send2 variant="Bulk" size={100} color="#fff" />
@@ -414,6 +416,8 @@ export const Home = () => {
                     </Button>
                 </motion.div>
             </motion.div>
+
+            <Footer />
         </div>
     );
 };
