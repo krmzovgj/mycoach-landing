@@ -12,7 +12,7 @@ import {
     Send2,
     Star1,
     Stickynote,
-    TimerPause
+    TimerPause,
 } from "iconsax-react";
 
 interface ProductShowcase {
@@ -314,7 +314,7 @@ export const Home = () => {
                     />
                 </div>
 
-                <div className="flex flex-col md:w-1/3 mt-10 gap-y-5">
+                <div className="flex flex-col md:w-1/3 w-full mt-10 gap-y-5">
                     {thisIsForTrainersWho.map((item) => (
                         <motion.div
                             initial={{
@@ -337,7 +337,7 @@ export const Home = () => {
                         >
                             <item.icon variant="Bulk" size={32} color="#000" />
                             <div className="py-3 px-3 w-full rounded-2xl bg-secondary border-2 border-foreground flex">
-                                <h3 className="text-foreground text-md ">
+                                <h3 className="text-foreground md:text-md text-sm">
                                     {item.content}
                                 </h3>
                             </div>
@@ -390,9 +390,9 @@ export const Home = () => {
                         delay: 0.1,
                     }}
                     viewport={{ once: false, amount: 0.2 }}
-                    className="mt-10 flex flex-col items-center"
+                    className="mt-6 md:mt-10 flex flex-col items-center"
                 >
-                    <h3 className="text-3xl md:text-4xl text-center text-background">
+                    <h3 className="text-2xl md:text-4xl text-center text-background">
                         Ready to get started? <br /> DM us on instagram
                     </h3>{" "}
                     <Button
