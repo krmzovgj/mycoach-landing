@@ -180,7 +180,7 @@ export const Home = () => {
                     initial={{ opacity: 0, y: 60, filter: "blur(20px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, type: "spring" }}
-                    viewport={{ once: true, amount: 0.2 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-center leading-9 md:leading-none  text-foreground md:text-5xl text-4xl"
                 >
                     What it actually <br className="flex md:hidden" /> looks
@@ -191,7 +191,7 @@ export const Home = () => {
                     initial={{ opacity: 0, y: 60, filter: "blur(20px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, type: "spring", delay: 0.1 }}
-                    viewport={{ once: true, amount: 0.2 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-muted-foreground text-md text-center mt-5 md:w-1/3 w-full"
                 >
                     Track your clients, build workouts, plan meals, and chat
@@ -229,7 +229,7 @@ export const Home = () => {
                                     duration: 0.5,
                                     type: "spring",
                                 }}
-                                viewport={{ once: true, amount: 0.2 }}
+                                viewport={{ once: false, amount: 0.2 }}
                                 className="p-2 bg-foreground/10 rounded-xl md:rounded-2xl"
                             >
                                 <img
@@ -284,7 +284,7 @@ export const Home = () => {
                         initial={{ opacity: 0, y: 60, filter: "blur(20px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, type: "spring" }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        viewport={{ once: false, amount: 0.2 }}
                         className="leading-9 md:leading-none  text-foreground md:text-5xl text-4xl"
                     >
                         This is for trainers who..
@@ -298,7 +298,7 @@ export const Home = () => {
                             type: "spring",
                             delay: 0.1,
                         }}
-                        viewport={{ once: true, amount: 0.2 }}
+                        viewport={{ once: false, amount: 0.2 }}
                         className="text-muted-foreground text-md mt-5 md:w-2/3  w-full"
                     >
                         Tired of clients asking ‘what’s next?’ every day?
@@ -332,7 +332,7 @@ export const Home = () => {
                                 type: "spring",
                                 delay: 0.15,
                             }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: false, amount: 0.2 }}
                             className="flex items-center w-full gap-x-4"
                         >
                             <item.icon variant="Bulk" size={32} color="#000" />
@@ -359,7 +359,7 @@ export const Home = () => {
                     duration: 0.5,
                     type: "spring",
                 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: false, amount: 0.2 }}
                 className="mt-30 md:w-2/3 relative overflow-hidden p-10 md:p-20 w-full bg-foreground flex-col place-self-center flex justify-center items-center rounded-3xl"
             >
                 <GridPattern
@@ -389,7 +389,7 @@ export const Home = () => {
                         type: "spring",
                         delay: 0.1,
                     }}
-                    viewport={{ once: true, amount: 0.2 }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="mt-10 flex flex-col items-center"
                 >
                     <h3 className="text-3xl md:text-4xl text-center text-background">
