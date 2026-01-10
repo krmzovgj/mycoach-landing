@@ -6,18 +6,13 @@ import { motion } from "framer-motion";
 import {
     ArchiveBox,
     ArrowRight,
-    ArrowSwapHorizontal,
-    Box,
     Element2,
-    ElementPlus,
-    Instagram,
-    MedalStar,
     People,
     RecordCircle,
     Send2,
     Star1,
     Stickynote,
-    TimerPause,
+    TimerPause
 } from "iconsax-react";
 
 interface ProductShowcase {
@@ -34,29 +29,29 @@ export const Home = () => {
         { order: "04", label: "Meals & Macros", imgUrl: "/diet.png" },
     ];
 
-    const problemsSolutions = [
-        {
-            order: "01",
-            problem: "Tracking programs across messages, spreadsheets...",
-            solution: "Keep all your clients plans together in one place",
-        },
-        {
-            order: "02",
-            problem: "Repeating the same instructions to clients",
-            solution: "Set instructions once so clients can see them anytime",
-        },
-        {
-            order: "03",
-            problem: "Losing track of who’s doing what and when",
-            solution: "See what each client is doing and adjust their plan",
-        },
-        {
-            order: "04",
-            problem: "Spending more time organizing than coaching",
-            solution:
-                "Let the system organize things so you can focus on coaching",
-        },
-    ];
+    // const problemsSolutions = [
+    //     {
+    //         order: "01",
+    //         problem: "Tracking programs across messages, spreadsheets...",
+    //         solution: "Keep all your clients plans together in one place",
+    //     },
+    //     {
+    //         order: "02",
+    //         problem: "Repeating the same instructions to clients",
+    //         solution: "Set instructions once so clients can see them anytime",
+    //     },
+    //     {
+    //         order: "03",
+    //         problem: "Losing track of who’s doing what and when",
+    //         solution: "See what each client is doing and adjust their plan",
+    //     },
+    //     {
+    //         order: "04",
+    //         problem: "Spending more time organizing than coaching",
+    //         solution:
+    //             "Let the system organize things so you can focus on coaching",
+    //     },
+    // ];
 
     const thisIsForTrainersWho = [
         {
